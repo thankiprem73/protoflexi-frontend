@@ -4,22 +4,24 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-8 py-4 bg-white shadow">
+    <nav className="flex items-center justify-between px-8 py-4 bg-white shadow-sm">
 
+      {/* Logo */}
       <div className="text-xl font-bold text-blue-600">
         Protoflexi
       </div>
 
-      <div className="flex gap-6">
-        <Link href="/" className="hover:text-blue-600">
+      {/* Links (FIX IS HERE ↓↓↓) */}
+      <div className="flex items-center gap-8 text-gray-700 font-medium">
+        <Link href="/" className="hover:text-blue-600 transition">
           Home
         </Link>
 
-        <Link href="/upload" className="hover:text-blue-600">
+        <Link href="/upload" className="hover:text-blue-600 transition">
           Upload
         </Link>
 
-        <Link href="/dashboard" className="hover:text-blue-600">
+        <Link href="/dashboard" className="hover:text-blue-600 transition">
           Dashboard
         </Link>
       </div>
