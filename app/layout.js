@@ -1,12 +1,16 @@
+import Navbar from "../components/Navbar";
+
 export const metadata = {
   title: "Protoflexi",
-  description: "PCB Prototyping Platform"
 };
 
 export default function RootLayout({ children }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <Navbar />   {/* 👈 THIS is “including it” */}
+        {children}   {/* 👈 page content */}
+      </body>
     </html>
   );
 }
