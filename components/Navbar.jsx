@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="className="flex items-center gap-10">
+    <nav className="flex items-center justify-between px-8 py-4 bg-white shadow-sm">
 
       {/* Logo */}
       <div className="text-xl font-bold text-blue-600">
@@ -12,7 +12,7 @@ export default function Navbar() {
       </div>
 
       {/* Links (FIX IS HERE ↓↓↓) */}
-      <div className="flex items-center gap-8 text-gray-700 font-medium">
+      <div className="flex items-center gap-10 text-gray-700 font-medium">
         <Link href="/" className="hover:text-blue-600 transition">
           Home
         </Link>
