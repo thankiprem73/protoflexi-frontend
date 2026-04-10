@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="className="flex items-center gap-10"">
+    <nav className="className="flex items-center gap-10">
 
       {/* Logo */}
       <div className="text-xl font-bold text-blue-600">
