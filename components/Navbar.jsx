@@ -1,10 +1,11 @@
-// components/Navbar.jsx
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div style={{ padding: 20, background: "#eee" }}>
-      <a href="/">Home</a> |{" "}
-      <a href="/upload">Upload</a> |{" "}
-      <a href="/dashboard">Dashboard</a>
+      <Link href="/">Home</Link> |{" "}
+      <Link href="/upload">Upload</Link> |{" "}
+      <Link href="/dashboard">Dashboard</Link>
     </div>
   );
 }
