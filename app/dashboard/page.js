@@ -1,5 +1,10 @@
 "use client";
 
 export default function Dashboard() {
-  return <div>Dashboard</div>;
+  return (
+    <div style={{ padding: 40 }}>
+      <h1>Dashboard</h1>
+      <p>Your orders will appear here.</p>
+    </div>
+  );
 }
