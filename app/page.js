@@ -1,13 +1,19 @@
+import UploadForm from "./components/UploadForm";
+
 export default function Home() {
   return (
-    <div style={{ padding: 40 }}>
-      <h1>Protoflexi</h1>
-<h1 className="text-red-500 text-4xl">
-  TEST UI
-</h1>
-      <a href="/upload">Go to Upload</a>
-      <br />
-      <a href="/dashboard">Go to Dashboard</a>
-    </div>
+    <main style={{ fontFamily: "sans-serif", padding: "40px" }}>
+      <h1 style={{ fontSize: "40px", fontWeight: "bold" }}>
+        Prototype. Test. Launch.
+      </h1>
+
+      <p style={{ marginTop: "10px", color: "#555" }}>
+        PCB Prototyping & BOM Sourcing for Australia & New Zealand
+      </p>
+
+      <div style={{ marginTop: "30px" }}>
+        <UploadForm />
+      </div>
+    </main>
   );
 }
