@@ -1,19 +1,25 @@
-import UploadForm from "./components/UploadForm";
+import QuoteForm from "../components/QuoteForm";
 
 export default function Home() {
   return (
-    <main style={{ fontFamily: "sans-serif", padding: "40px" }}>
-      <h1 style={{ fontSize: "40px", fontWeight: "bold" }}>
-        Prototype. Test. Launch.
-      </h1>
+    <div className="container">
+      {/* HERO */}
+      <div className="hero">
+        <div className="left">
+          <h1>Prototype. Test. Launch.</h1>
+          <p>PCB Prototyping & BOM Sourcing for Australia & New Zealand</p>
 
-      <p style={{ marginTop: "10px", color: "#555" }}>
-        PCB Prototyping & BOM Sourcing for Australia & New Zealand
-      </p>
+          <div className="features">
+            <span>⚡ Fast turnaround</span>
+            <span>📦 Full BOM sourcing</span>
+            <span>🇦🇺 Local support</span>
+          </div>
+        </div>
 
-      <div style={{ marginTop: "30px" }}>
-        <UploadForm />
+        <div className="right">
+          <QuoteForm />
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
