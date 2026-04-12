@@ -1,10 +1,8 @@
+// app/layout.js
 export default function RootLayout({ children }) {
   return (
-    <div className="max-w-5xl mx-auto">{children}</div>;
     <html>
-      <body>{children}</body>
+      <body className="bg-gray-50">{children}</body>
     </html>
   );
 }
-
-<div className="max-w-5xl mx-auto">{children}</div>
