@@ -2,7 +2,8 @@ import QuoteForm from "../components/QuoteForm";
 
 export default function Home() {
   return (
-    <main className="p-10">
+    <main style={{ padding: "40px" }}>
+      <h1>Protoflexi</h1>
       <QuoteForm />
     </main>
   );
