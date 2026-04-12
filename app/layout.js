@@ -5,3 +5,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+<div className="max-w-5xl mx-auto">{children}</div>
